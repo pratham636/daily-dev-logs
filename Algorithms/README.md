@@ -15,5 +15,5 @@ This folder contains my implementations of classic algorithms from my **Design a
 To compile and run any of these files (e.g., Convex Hull), use a C++ compiler like `g++`:
 
 ```bash
-g++ convex_hull.cpp -o convex_hull
-./convex_hull
+g++ convex_hull.cpp -o program_name
+./program_name
