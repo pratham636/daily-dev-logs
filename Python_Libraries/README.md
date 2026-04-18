@@ -6,7 +6,18 @@ This folder documents my journey through Python's professional ecosystem. It cov
 
 |Library/Tool|Category|Purpose|
 | :---| :---| :---|
-|FastAPI|Web Framework|Building high-performance backend APIs.|DockerDevOpsContainerizing apps to run anywhere (Windows/Linux).PandasData ScienceCleaning and analyzing large datasets.NumPyMathematicsHandling complex arrays and math operations.MatplotlibVisualizationCreating graphs, charts, and data plots.TkinterGUIBuilding desktop applications with windows.
+|FastAPI|Web Framework|Building high-performance backend APIs.|
+| :---| :---| :---|
+|Docker|DevOps|Containerizing apps to run anywhere (Windows/Linux).|
+| :---| :---| :---|
+|Pandas|Data Science|Cleaning and analyzing large datasets.|
+| :---| :---| :---|
+|NumPy|Mathematics|Handling complex arrays and math operations.|
+| :---| :---| :---|
+|Matplotlib|Visualization|Creating graphs, charts, and data plots.|
+| :---| :---| :---|
+|Tkinter|GUI|Building desktop applications with windows.|| :---| :---| :---|
+| :---| :---| :---|
 
 🐳 Containerization with Docker
 
