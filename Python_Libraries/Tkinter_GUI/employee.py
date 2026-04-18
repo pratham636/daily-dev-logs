@@ -1,0 +1,15 @@
+from cProfile import label
+from tkinter import *
+root = Tk()
+root.title("EMPLOYE")
+root.geometry("400x550")
+Label(root,text="Empid:").grid(row=0)
+Label(root,text="Employee Name:").grid(row=1)
+Label(root,text="job:").grid(row=2)
+e1=Entry(root)
+e2=Entry(root)
+e3=Entry(root)
+e1.grid(row=0,column=1)
+e2.grid(row=1,column=1)
+e3.grid(row=2,column=1)
+root.mainloop()
