@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>JavaScript Tutorials</title>
+		<script>
+				var res;
+				let s="Welcome";
+				var num1 = 10;
+				let num2 = 20;
+				function Add()
+				{
+					document.getElementById("1").innerHTML = "The Result is "+ (num1+num2);
+				}
+				function Check()
+				{
+					alert(typeof(res));
+					alert(s[0]);
+					let n = NaN;
+					alert(typeof(n));
+					n = null;
+					alert(typeof(n));
+					var t = (num1/3==0);
+					alert(typeof(t));
+				}
+		</script>
+	</head>
+	<body>
+			<p>JavaScript Data types</p> <br/>
+			<ol>
+				<li>undefined</li>
+				<li>boolean</li>
+				<li>number</li>
+				<li>string</li>
+				<li>null</li>
+			</ol>
+			<p id="1">Result</p> <br/>
+			<button onclick="Add()">Addition</button> <br/><br/>
+			<button onclick="Check()">Check Data Types</button>
+	</body>
+</html>

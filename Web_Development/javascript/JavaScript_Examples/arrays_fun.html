@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<title>JavaScript Tutorials</title>
+		<script>
+		var myarray = [11,61,31,14,21];
+		function sorting()
+		{
+			let isSort = confirm("Do you want to Sort?");
+			if(isSort){
+				myarray.sort();
+			let res="";
+			for(var i=0;i<myarray.length;i++){
+				res +=myarray[i]+" ";
+			}
+			document.getElementById('r').innerHTML =" Result Array:"+res;}
+		}
+		
+		function add_elements()
+		{
+			let n,res;
+			n=parseInt(prompt("Enter a number"));
+			myarray.push(n);
+			for(var i=0;i<myarray.length;i++){
+				res +=myarray[i]+" ";
+			}
+			document.getElementById('r').innerHTML =" Initial Array :"+res;
+		}
+
+		function delete_elements()
+		{
+			let res;
+			myarray.pop();
+			for(var i=0;i<myarray.length;i++){
+				res +=myarray[i]+" ";
+			}
+			document.getElementById('r').innerHTML =" Initial Array :"+res;
+		}
+
+		function count()
+		{
+			alert("Length of Array "+myarray.length);
+		}
+		
+		function splice_array()
+		{	
+			let res;
+			//remove one element from index 2 and add the new elements
+			myarray.splice(2, 1, 78, 91);
+			for(var i=0;i<myarray.length;i++){
+				res +=myarray[i]+" ";
+			}
+			document.getElementById('r').innerHTML =" Initial Array :"+res;
+		}
+		function reversing()
+		{
+			let res="";
+			var sarray = myarray.reverse();
+			for(var i=0;i<sarray.length;i++){
+				res +=sarray[i]+" ";}
+			document.getElementById('r').innerHTML =" Result Array:"+res;
+		}
+		
+		function filters()
+		{
+			let users =[34,65,76,44,80,24,12];
+			// returns array of the first two users
+			let someUsers = users.filter(users=>users>50);
+			someUsers.forEach(alert);
+		}
+		function slice_array()
+		{
+			let ar= [1,2,3,4,5,6];
+			alert(ar.slice(2,5));
+		}
+		function travel()
+		{
+			myarray.forEach(alert);
+		}
+	
+
+		//fill, find, indexOf
+		</script>  
+	</head>
+	<body>
+			<p>JavaScript Array Functions</p> <br/>
+			<p>Initial Array : 11,61,31,14,21 </p><br/>
+			<p id ='r'>Result Array: </p><br/>
+			<button onclick="add_elements()">Add Elements to Array</button><br/><br/>
+			<button onclick="delete_elements()">Delete Elements to Array</button><br/><br/>
+			<button onclick="splice_array()">Splice Array Elements</button><br/><br/>
+			<button onclick="slice_array()">Slice Array Elements</button><br/><br/>
+			<button onclick="count()">Length of Array</button><br/><br/>
+			<button onclick="filters()">Filter Array Elements</button><br/><br/>
+			<button onclick="sorting()">Sorting Array</button><br/><br/>
+			<button onclick="reversing()">Reverse Array</button><br/><br/>
+			<button onclick="travel()">Traverse Array</button>
+	</body>
+</html>

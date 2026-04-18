@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>JavaScript Tutorials</title>
+		<script>
+		var myarray = [-1,-1,-1,-1,-1];
+			for(var i = 0; i < myarray.length; i++)
+				myarray[i]= parseInt(prompt("Enter a number"));
+
+		
+		function sum() {
+			var s= 0;
+				for(var i = 0; i < myarray.length; i++) 
+					s+=myarray[i];
+			alert("The Sum of array elements is "+ s);
+	
+		}
+
+		</script>
+	</head>
+	<body>
+			<p>JavaScript Arrays</p> <br/>
+			<button onclick="sum()">Sum Array</button>
+	</body>
+</html>

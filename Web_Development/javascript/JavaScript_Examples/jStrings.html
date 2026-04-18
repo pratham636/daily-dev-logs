@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>JavaScript Tutorials</title>
+		<script>
+			let dept="Computational Intelligence";
+			let univ='SRM University';
+			let name=`Guest:
+					*ram
+					*ajay
+					*viki`;
+			function disp()
+			{
+				alert(univ);
+				alert(name);
+			}
+			function len()
+			{
+				alert(name.length);
+			}
+			function inspect()
+			{
+				alert(dept[0]);
+				alert(dept.charAt(5));
+			}
+			function disp_char()
+			{
+				for (let char of univ) {
+ 				alert(char); 
+				}
+			}
+			function check()
+			{
+				alert("ArjunKumar".startsWith('Arj'));
+				alert(univ.includes("SRM"));
+			}
+			//slice, substring,indexOf
+		</script>
+	</head>
+	<body>
+			<p>JavaScript String and its functions</p> <br/>
+			<button onclick="disp()">Display String Values</button><br/><br/>
+			<button onclick="len()">length of String</button><br/><br/>
+			<button onclick="inspect()">Inspect String</button><br/><br/>
+			<button onclick="disp_char()">Character Wise Disp</button><br/><br/>
+			<button onclick="check()">Looking for pattern</button><br/><br/>
+	</body>
+</html>

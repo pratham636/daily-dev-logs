@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>JavaScript Tutorials</title>
+		<script>
+			function email_validate()
+			{
+				let inputText = document.getElementById("email");
+				var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;   ///\S+@\S+\.\S+/g;
+				if(inputText.value.match(mailformat))
+				{
+					alert("You have entered a valid email address!");    //The pop up alert for a valid email address
+					return true;
+				}
+				else
+				{
+					alert("You have entered an invalid email address!");    //The pop up alert for an invalid email address
+					document.form1.text1.focus();
+					return false;
+				}
+			}
+			function phone_validate()
+			{
+				let re= /^(\+91-|\+91|0)?[6-9][0-9]{9}$/;
+				let phonenum = document.getElementById("phone").value;
+				if(re.test(phonenum))
+					alert("You have entered valid phone number");
+				else
+					alert("Invalid Phone Number");
+			}
+			function password_validate()
+			{
+				let pass= document.getElementById('passw');
+				var strongRegex = new RegExp("^(?=.{14,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g")
+				if(strongRegex.test(pass.value))
+					alert("Valid Password");
+				else
+					alert("password should contain atleast one number, one upper case, one lower case, one special symbol and length of eight");
+        			
+					
+			}
+
+			function regno_validate()
+			{
+			let regno = document.getElementById('regno');
+			var regex1 = /^(RA|RC|PA)\d{13}$/i;
+			if(!regex1.test(regno.value)) 
+        				alert("Invalid Register Number");
+        			else
+					alert("Valid RegisterNumber");
+			}
+		</script>
+	</head>
+	<body>
+			<p>JavaScript Validations using Regular Expressions</p> <br/>
+			E-mail address<br/><input id="email" type='text' name='e-mail' onfocusout="email_validate()"/><br/>
+			Phone Number<br/><input id="phone" type='text' name='phone' onfocusout="phone_validate()"/><br/>
+			Password <br/><input id="passw" type='text' name='pass' onfocusout="password_validate()"/><br/>
+			Register Number <br/><input id="regno" type='text' name='regno' onfocusout="regno_validate()"/><br/>
+
+	</body>
+</html>

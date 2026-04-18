@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<title>Java Script example</title>
+<script src="exter.js" ></script>
+<script>
+	var num1 =parseInt( prompt("Enter Number1"));
+	var num2 =parseInt( prompt("Enter Number2"));
+	var num3 =num1+num2;
+	//document.write(num1+num2);
+	console.log(num1+num2);
+	alert(num1+num2);
+	
+var name = "James";
+var roll_no = 30;
+console.log( name + roll_no );
+
+var a = -10.2256;
+console.log( typeof(a));
+
+var a = 10;
+console.log( typeof(typeof(a)));
+
+	
+	function date()
+	{
+	document.getElementById('date').innerHTML = Date();
+	}
+
+	function result() 
+	{
+	  document.getElementById("result").innerHTML = "The result is "+num3;
+	}
+
+</script>
+</head>
+<body>
+	<p1 id="result">The result is </p1><br/><br/>
+	<p1 id="date"> The Date is </p1><br/><br/>
+	<button onclick="date()">The time is?</button> <br/><br/>
+	<button onclick="result()">Result</button> <br/><br/>
+	<button onclick="change()">Change</button>
+
+</body>
+</html>
