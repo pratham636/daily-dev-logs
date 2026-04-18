@@ -5,7 +5,6 @@ This folder documents my journey through Python's professional ecosystem. It cov
 🛠️ Tech Stack & Libraries
 
 |Library/Tool|Category|Purpose|
-| :---| :---| :---|
 |FastAPI|Web Framework|Building high-performance backend APIs.|
 | :---| :---| :---|
 |Docker|DevOps|Containerizing apps to run anywhere (Windows/Linux).|
