@@ -11,7 +11,5 @@ This folder documents my journey through Python's professional ecosystem. It cov
 🐳 Containerization with Docker
 
 I use Docker to ensure that my applications (like my FastAPI projects) have a consistent environment. This prevents the "it works on my machine" problem.
-
 Dockerfile: Sets up the Python environment and dependencies.
-
 Docker Compose: Orchestrates the API and database services
