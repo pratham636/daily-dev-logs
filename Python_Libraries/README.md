@@ -10,6 +10,8 @@ This folder documents my journey through Python's professional ecosystem. It cov
 |Pandas|Data Science|Cleaning and analyzing large datasets.|
 |NumPy|Mathematics|Handling complex arrays and math operations.|
 |Matplotlib|Visualization|Creating graphs, charts, and data plots.|
+| :---| :---| :---|
+
 |Tkinter|GUI|Building desktop applications with windows.|
 | :---| :---| :---|
 
